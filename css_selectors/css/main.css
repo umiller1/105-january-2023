@@ -1,0 +1,60 @@
+/* 
+This is a HTML Tag Selector
+This selects ALL DIV elements 
+*/
+div {
+    border: 1px solid black;
+}
+
+/*
+This is an ID Selector
+This selects ALL ELEMENTS with an ID of "div" applied to it 
+*/
+#div {
+    border: 1px solid blue;
+}
+
+/*
+This is a Class Selector
+This selects ANY ELEMENT with an CLASS of "div" applied to it
+*/
+.div {
+    border: 1px solid orange;
+}
+
+/*
+This selects a Child Element
+This selects all H1 elements inside of all SECTION elements
+*/
+section h1 {
+    border: 1px solid pink;
+}
+
+/*
+This selects all H1 elements inside of all elements with a Class of "parent"
+*/
+.parent h1 {
+    background-color: yellow;
+}
+
+
+
+/* This selects all DIVs with a class of "div_1" */
+div.div_1 {
+    color: blue;
+}
+
+/* This selects ANY element with a class of "div_1" */
+.div_1 {
+    color: pink;
+}
+
+/* This selects any DIV that is in the hover state */
+div:hover {
+    background: peru;
+}
+
+/* This selects ANY element with a class of "div_1" that is in the hover state */
+.div_1:hover {
+    background-color: blue;
+}
