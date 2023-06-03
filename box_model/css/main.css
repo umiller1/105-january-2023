@@ -1,0 +1,29 @@
+#main {
+    background-color: lavender;
+    padding: 50px;
+    margin: 20px;
+}
+
+#content {
+    border: 5px solid navy;
+    background-color: slateblue;
+    color: white;
+    margin: 25px 0;
+    padding: 25px 45px 25px 15px;
+}
+
+#content div {
+    margin-bottom: 12px;
+}
+
+#content #quote {
+    margin: 25px 0 25px 45px;
+}
+
+#content #quote div {
+    margin-bottom: 5px;
+}
+
+#content #quote #quote_citation {
+    margin-left: 25px;
+}
