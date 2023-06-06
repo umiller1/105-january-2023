@@ -5,7 +5,12 @@
     padding: 0;
 }
 
-header {
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header, footer {
     background-color: #ffae71;
 }
 
@@ -17,13 +22,14 @@ header h1 {
     font-size: 48px;
 }
 
-.contain {
+/* .contain {
     width: 85vw;
     margin: 0 auto;
-}
+} */
 
 header nav {
-    padding-bottom: 25px;
+    padding: 0 50px 25px 50px;
+    border-bottom: 1px solid black;
 }
 
 header nav a {
@@ -47,4 +53,5 @@ main {
 
 main h2 {
     color: #ffae71;
+    margin-bottom: 25px;
 }
