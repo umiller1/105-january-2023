@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: pink;
+    color: black; /* Only add and change if your text color does not contrast well with the background you chose*/
+    position: sticky; 
+    top: 0;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 24px;
+    padding: 24px;
+}
+
+p {
+    height: 500px;
+}
+
+h1, p {
+    width: 600px;
+    margin: 24px auto;
+}
