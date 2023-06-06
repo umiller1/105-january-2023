@@ -47,11 +47,44 @@ header nav a:hover {
 }
 
 main {
-    background-color: seashell;
+    background-color: #efefef;
     padding: 25px 50px;
 }
 
 main h2 {
-    color: #ffae71;
+    color: darkorange;
     margin-bottom: 25px;
+}
+
+section.card {
+    background-color: white;
+    padding: 50px 40px;
+    border: 2px solid #ffae71;
+    margin-bottom: 40px;
+}
+
+section.card h3 {
+    color: #ffae71;
+    letter-spacing: 1.5px;
+}
+
+section.card hr {
+    border: none;
+    border-bottom: 2px solid #ffae71;
+    margin: 20px auto;
+}
+
+section.card p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+section.card img {
+    width: 100%;
+}
+
+section.card #image_container {
+    width: 300px;
+    float: left;
+    padding: 25px;
 }
