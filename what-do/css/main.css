@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: paleturquoise;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#first-line {
+    width: 80%;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 2px solid gold;
+}
+section {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+section div.col {
+    display: inline-block;
+    width: 200px;
+    padding: 0 25px;
+    background-color: pink;
+}
