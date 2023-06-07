@@ -7,20 +7,7 @@
 }
 
 /* Box-Sizing */
-#boxsize1 div {
-    width: 25%;
-    display: inline-block;
-    border: 1px solid red;
-}
 
-#boxsize2 {
-    box-sizing: border-box;
-}
-#boxsize2 div{
-    width: 25%;
-    display: inline-block;
-    border: 1px solid blue;
-}
 
 /* Fonts */
 body {
