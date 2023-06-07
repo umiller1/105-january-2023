@@ -22,11 +22,6 @@ header h1 {
     font-size: 48px;
 }
 
-/* .contain {
-    width: 85vw;
-    margin: 0 auto;
-} */
-
 header nav {
     padding: 0 50px 25px 50px;
     border-bottom: 1px solid black;
@@ -88,7 +83,7 @@ section.card img {
 section.card #image_container {
     width: 300px;
     float: left;
-    padding: 25px;
+    padding: 0 25px;
 }
 
 main section.card:last-of-type p {
@@ -97,4 +92,14 @@ main section.card:last-of-type p {
 
 .clear {
     clear: both;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+    color: navy;
+}
+
+footer p:first-of-type {
+    margin-bottom: 10px;
 }
