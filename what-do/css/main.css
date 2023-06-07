@@ -1,10 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background: linear-gradient(to right, rgb(255, 192, 203, 0.5), rgba(230, 230, 250, 0.5));
+}
+
+h1, h2 {
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: #B8C0FF;
+    text-shadow: 1px 2px 1px black;
+}
+
+h2 {
+    font-size: 30px;
+    color: #B8C0FF;
+    text-shadow: 1px 2px 1px black;
 }
 
 header, footer {
-    background-color: #FFC898;
+    background-color: #ffe8d6;
+}
+
+header {
+    border-bottom: 5px double #B8C0FF;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -18,41 +51,63 @@ nav ul li {
 
 nav ul li a {
     color: black;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 20px;
+    text-decoration: none;
 }
 
 #first-line {
-    width: 85%;
+    width: 500px;
     margin: 10px auto;
     border: none;
-    border-bottom: 3px solid #B8C0FF;
+    border-bottom: 5px double #B8C0FF;
 }
 
-section {
-    width: 85%;
-    margin: 0 auto;
+section.card {
+    width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffe8d6;
+    border: 10px #B8C0FF;
+    border-style: double groove;
+    border-radius: 25px;
+    box-shadow: 3px 3px 1px black;
 }
-div.card {
+
+section.card img {
+    border-radius: 50px;
+}
+
+section.card hr {
+    margin: 20px auto;
+    border: none;
+    border-bottom: 5px double #B8C0FF;
+}
+
+section#cats p {
     display: inline-block;
-    background-color: #B8C0FF;
-    border: 2px solid black;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 393px;
-}
-
-div img {
-    width: 100%;
-}
-
-div#img-contain {
     width: 200px;
-    float: left;
     margin-right: 25px;
-    border: 2px solid black;
+}
+section#cats p:last-of-type {
+    margin-right: 0;
 }
 
+section#cats img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.img-sect img {
+    width: 200px;
+    float: right;
+    margin: 0 0 20px 25px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    border-top: 5px double #B8C0FF;
+    text-align: center;
+    padding: 25px 0;
+}
