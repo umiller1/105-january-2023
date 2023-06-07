@@ -24,7 +24,7 @@ header h1 {
 
 header nav {
     padding: 0 50px 25px 50px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 header nav a {
@@ -56,6 +56,7 @@ section.card {
     padding: 50px 40px;
     border: 2px solid #ffae71;
     margin-bottom: 40px;
+    box-shadow: 3px 3px 4px rgba(251, 192, 147, 1);
 }
 
 section.card h3 {
@@ -98,6 +99,7 @@ footer {
     padding: 50px;
     text-align: center;
     color: navy;
+    border-top: 2px solid black;
 }
 
 footer p:first-of-type {
