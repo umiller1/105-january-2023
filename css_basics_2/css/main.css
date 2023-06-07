@@ -1,5 +1,60 @@
 /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Quicksand:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Box-Sizing */
+#boxsize1 div {
+    width: 25%;
+    display: inline-block;
+    border: 1px solid red;
+}
+
+#boxsize2 {
+    box-sizing: border-box;
+}
+#boxsize2 div{
+    width: 25%;
+    display: inline-block;
+    border: 1px solid blue;
+}
+
+/* Fonts */
+body {
+    /* 
+        font family types:
+        serif, sans-serif, monospace, cursive, fantasy 
+    */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    /*
+        font sizing units: px, pt, em, rem, %
+    */
+    font-size: 18px;
+    letter-spacing: .05em;
+    line-height: 24px;
+}
+
+span {
+    font-family: 'Bagel Fat One', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: .1em;
+    color: orangered;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    border: 2px solid teal;
+    padding: 30px 0;
+    /* 
+        offset-x, offset-y, blur-radius, spread-radius, color 
+    */
+    box-shadow: 4px 6px 8px 2px green;
+}
+
 /* Position */
 /* Z-Index */
 /* Overflow */
