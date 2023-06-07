@@ -4,7 +4,7 @@
 }
 
 header, footer {
-    background-color: paleturquoise;
+    background-color: #FFC898;
 }
 
 nav ul {
@@ -16,26 +16,43 @@ nav ul li {
     padding: 25px 20px;
 }
 
+nav ul li a {
+    color: black;
+}
+
 h1 {
     text-align: center;
     margin-top: 20px;
 }
 
 #first-line {
-    width: 80%;
+    width: 85%;
     margin: 10px auto;
     border: none;
-    border-bottom: 2px solid gold;
-}
-section {
-    width: 80%;
-    margin: 50px auto;
-    text-align: center;
+    border-bottom: 3px solid #B8C0FF;
 }
 
-section div.col {
-    display: inline-block;
-    width: 200px;
-    padding: 0 25px;
-    background-color: pink;
+section {
+    width: 85%;
+    margin: 0 auto;
 }
+div.card {
+    display: inline-block;
+    background-color: #B8C0FF;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 393px;
+}
+
+div img {
+    width: 100%;
+}
+
+div#img-contain {
+    width: 200px;
+    float: left;
+    margin-right: 25px;
+    border: 2px solid black;
+}
+
