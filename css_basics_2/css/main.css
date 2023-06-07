@@ -5,6 +5,19 @@
 * {
     margin: 0;
     padding: 0;
+    /*
+        Box sizing tells the browsers how to calculate the total width and height.
+        content-box which adds the width, padding, and border together. If you apply a width, the padding and border will make it larger than the number you apply.
+        border-box adds the width, padding, and border together and shrinks the number applied to the width to absorb any extra numbers. Makes it easier to size elements 
+     */
+    box-sizing: border-box;
+}
+
+#boxsize div {
+    width: 25%;
+    /* inline-block allows block elements to act as inline elements while allowing for a width and height to be applied */
+    display: inline-block;
+    border: 2px solid blue;
 }
 
 /* Fonts */
@@ -41,9 +54,36 @@ span {
 }
 
 /* Position */
+#positioning {
+    border: 1px solid green;
+    height: 200px;
+    position: relative;
+    overflow-y: scroll;
+}
+#positioning #div_c {
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#positioning #div_d {
+    background-color: thistle;
+    position: fixed;
+    right: 0;
+    top: 300px;
+}
+#positioning #div_e {
+    background-color: skyblue;
+    position: sticky;
+    top: 0;
+}
+#positioning p {
+    height: 1000px;
+    background-color: bisque;
+}
+
 /* Z-Index */
 /* Overflow */
-/* Display: Inline-Block */
 /* Border-Radius */
 /* Border-Style */
 /* Text-Decoration */
