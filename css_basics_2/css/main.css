@@ -107,6 +107,8 @@ span {
     text-decoration: underline;
     text-decoration-color: blue;
     text-decoration-style: wavy;
+    /* Text Shadow */
+    text-shadow: 2px 4px 5px green;
 }
 #text #p2 {
     text-decoration:line-through;
@@ -119,5 +121,15 @@ span {
     text-decoration-style: dotted;
     margin-top: 10px;
 }
-/* Text-Shadow */
+
 /* Gradients */
+.linear, .radial {
+    padding: 150px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 20px;
+}
+.linear {
+    /* background: linear-gradient(to left top, orange, yellow, pink, magenta); */
+    background: linear-gradient(45deg, rgba(255, 0, 200, .2), darkorange);
+}
