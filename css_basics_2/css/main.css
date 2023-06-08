@@ -58,6 +58,7 @@ span {
     border: 1px solid green;
     height: 200px;
     position: relative;
+    /* Overflow */
     overflow-y: scroll;
 }
 #positioning #div_c {
@@ -70,7 +71,9 @@ span {
     background-color: thistle;
     position: fixed;
     right: 0;
-    top: 300px;
+    /* top: 300px; */
+    /* Z-Index */
+    z-index: 1;
 }
 #positioning #div_e {
     background-color: skyblue;
@@ -82,8 +85,6 @@ span {
     background-color: bisque;
 }
 
-/* Z-Index */
-/* Overflow */
 /* Border-Radius */
 /* Border-Style */
 /* Text-Decoration */
