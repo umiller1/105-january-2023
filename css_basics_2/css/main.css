@@ -86,7 +86,38 @@ span {
 }
 
 /* Border-Radius */
-/* Border-Style */
+#multi .card {
+    border: 2px solid purple;
+    padding: 25px;
+    margin: 25px auto;
+}
+#multi .round {
+    border-radius: 50px 20px 30px 80px;
+    border-color: blueviolet;
+}
+#multi .funky {
+    border-radius: 50px 25px;
+    border-width: 15px;
+    /* Border-Style */
+    border-style: dotted double dashed groove;
+}
+
 /* Text-Decoration */
+#text #p1 {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-style: wavy;
+}
+#text #p2 {
+    text-decoration:line-through;
+    text-decoration-color: pink;
+    text-decoration-style: dashed;
+}
+#text #p3 {
+    text-decoration: overline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    margin-top: 10px;
+}
 /* Text-Shadow */
 /* Gradients */
