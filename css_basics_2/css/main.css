@@ -130,6 +130,12 @@ span {
     margin: 20px;
 }
 .linear {
-    /* background: linear-gradient(to left top, orange, yellow, pink, magenta); */
-    background: linear-gradient(45deg, rgba(255, 0, 200, .2), darkorange);
+    /* 
+    type of gradient: linear or radal
+    direction, colors can be rgba, rgb, hex, html colors
+     */
+    background: linear-gradient(0deg, #fee000, #ef5500);
+}
+.radial {
+    background: radial-gradient(circle at center, orange, pink, yellow, red);
 }
