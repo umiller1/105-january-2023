@@ -21,7 +21,29 @@ h3 {
 }
 
 .column {
+    /* 
+    row: default direction, the direction of the elements are laid out in a line
+    row-reverse: similar to the above but flipped
+    column: the direction of the elements are stacked
+    column-reverse: similar to the above but flipped. 
+     */
     flex-direction: column;
-    flex-direction: column-reverse;
-    flex-direction: row-reverse;
+}
+
+.right {
+    justify-content: flex-end;
+}
+.left {
+    /* default justify-content */
+    justify-content: flex-start;
+}
+.center {
+    justify-content: center;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+.space_around {
+    justify-content: space-around;
 }
