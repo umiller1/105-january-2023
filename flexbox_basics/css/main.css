@@ -2,10 +2,26 @@ h3 {
     text-align: center;
 }
 .box {
-    border: 3px solid orange;
+    border: 3px solid salmon;
     border-radius: 10px;
     width: 50px;
     height: 50px;
     background-color: grey;
     margin: 12px;
+}
+.box:last-of-type, .box:nth-of-type(3) {
+    background-color: black;
+}
+
+.flexbox {
+    display: flex;
+    border: 3px solid navy;
+    background-color: azure;
+    margin: 24px;
+}
+
+.column {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
 }
