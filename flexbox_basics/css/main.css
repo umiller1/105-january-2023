@@ -19,6 +19,9 @@ h3 {
     background-color: azure;
     margin: 24px;
 }
+.flexbox:nth-of-type(8), .flexbox:nth-of-type(9), .flexbox:nth-of-type(10) {
+    height: 200px;
+}
 
 .column {
     /* 
