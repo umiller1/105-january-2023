@@ -53,3 +53,14 @@ h3 {
 .space_evenly {
     justify-content: space-evenly;
 }
+
+.end {
+    align-items: end;
+}
+.start {
+    /* this is the default value */
+    align-items: start;
+}
+.center {
+    align-items: center;
+}
