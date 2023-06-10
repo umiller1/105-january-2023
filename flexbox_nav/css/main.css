@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: coral;
+    padding: 24px;
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
