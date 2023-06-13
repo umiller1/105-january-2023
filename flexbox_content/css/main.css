@@ -1,0 +1,51 @@
+main {
+    max-width: 800px;
+    margin: 24px auto;
+}
+main h1, main h2 {
+    text-align: center;
+}
+
+/*delete after images have been appropriately resized*/
+img { 
+    width: 200px;
+}
+
+/* 
+    let's suppose we want to have a flexbox gallery that arranges the images inside of it
+    in columns of 4, with margins of 24px around them. to do that, we'll need our flexbox to wrap.
+*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+    next, we'll need our images to resize themselves to each take up a quarter of the 
+    total width.  you'll soon discover this is a little easier said than done.
+*/
+.gallery img {
+    margin: 24px;
+    /*
+        a naive approach might involve simply setting a width of 25%;
+        this is the right idea, but we have to fight with how elements are sized
+        by default in CSS first.
+    */
+    /* width: 25%; */
+
+    /* 
+        didn't work, right? that because when you set a width on an element, that width
+        is actually setting the CONTENT width of the element by default, NOT the width of 
+        box/border (which is completely asinine to me at least). we can fix that below 
+    */
+    box-sizing: border-box;
+     /* 
+        but we still have an issue with the size, because the margin is ADDED to the width
+        we tried to set up above. we need a way to strip off the margin when setting the width.
+
+        the special calc notation below allows us to set the width of the images in the gallery
+        to be 25% (or 1/4 the size) of the container, but also remove the margin we added
+        (24px on both the left and right side, so 24px * 2)
+    */
+    width: calc(25% - 2*24px);
+}
