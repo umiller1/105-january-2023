@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, #logo p {
+    font-family: 'Cherry Bomb One', cursive;
+}
+p, li, a, blockquote {
+    font-family: 'Poppins', sans-serif;
+}
+img, svg {
+    width: 1rem;
+}
+
+header {
+    background-color: #ffeed8;
+}
+header nav {
+    display: flex;
+    padding: .75rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+header nav #logo {
+    display: flex;
+    align-items: center;
+    color: #0f9c89;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+header nav #logo svg {
+    width: 1.825rem;
+    fill: #0f9c89;
+    margin-right: 0.5rem;
+    order: 1;
+    transition: all .5s;
+}
+header nav #logo p {
+    order: 2;
+}
+header nav #logo:hover {
+    color: #cd8c00;
+    text-decoration: underline;
+}
+header nav #logo:hover svg {
+    fill: #cd8c00;
+}
+
+header #mainnav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+header #mainnav li {
+    margin-right: 1.25rem;
+}
+header #mainnav li:last-of-type {
+    margin-right: 0;
+}
+header #mainnav li a {
+    color: black;
+    text-decoration: none;
+    transition: all .5s;
+}
+header #mainnav li a:hover {
+    color: #0f9c89;
+    text-decoration: underline;
+}
+
+header #mainnav .drop {
+    position: relative;
+}
+.drop ul {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    background-color: #ffeed8;
+    padding: .5rem 1.25rem;
+    visibility: hidden;
+    opacity: 0;
+    transition:
+    top .5s,
+    visibility .5s,
+    opacity .5s;
+}
+.drop:hover ul {
+    top: calc(100% + .75rem);
+    opacity: 1;
+    visibility: visible;
+}
+.drop ul li {
+    margin-bottom: .5rem;
+}
+.drop ul li:last-of-type {
+    margin-bottom: 0;
+}
