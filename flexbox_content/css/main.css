@@ -57,3 +57,47 @@ img {
     */
     object-fit: cover;
 }
+
+.side_by_side {
+    display: flex;
+    align-items: center;
+    margin: 48px 24px;
+}
+
+/* 
+    as you've seen, images can be finicky children in flexboxes, 
+    so oftentimes we need to wrap our images in a container element 
+    and allow the flexbox to manipulate the container, rather than
+    the images directly; if we do this, then we can allow our image 
+    to grow to fill the container with width: 100%, so that the 
+    image doesn't get distorted
+*/
+.side_by_side .img_container {
+    flex: 2;
+}
+.side_by_side .img_container img {
+    width: 100%;
+    border-radius: 40px 0px 40px 0px;
+}
+
+/* 
+    since the img_container has flex set to 2, 
+    and our paragraph has flex set to 1,
+    the img_container will be twice as wide as
+    our paragraph (since 2 / 1 = 2).
+
+    We could have just as easily set the img_container
+    flex value to 4 and the paragraph's to 2, and 
+    we'd have the same effect (since 4 / 2 = 2) 
+*/
+.side_by_side p {
+    flex: 1;
+    margin: 24px;
+}
+
+/*
+    same with our gallery_row; we've learned our lesson,
+    so let's wrap our images in an img_container, and 
+    allow the flexbox to manipulate that first; then
+    we'll just let our image grow to fill the container.
+*/
