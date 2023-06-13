@@ -48,4 +48,12 @@ img {
         (24px on both the left and right side, so 24px * 2)
     */
     width: calc(25% - 2*24px);
+    /* 
+        now we have 4 images side by side in a row!
+
+        however, note that this can cause the images to become squashed or squished.
+        to remedy this, we can allow the images to be cropped to fit, using the 
+        object-fit property and giving it the value 'cover'.
+    */
+    object-fit: cover;
 }
