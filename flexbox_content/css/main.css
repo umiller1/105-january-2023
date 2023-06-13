@@ -101,3 +101,21 @@ img {
     allow the flexbox to manipulate that first; then
     we'll just let our image grow to fill the container.
 */
+.gallery_row {
+    display: flex;
+    align-items: center;
+}
+
+/*
+    by giving all img_containers the same flex value,
+    they will all have the same width in the flexbox
+*/
+.gallery_row .img_container {
+    flex: 1;
+    margin: 24px;
+}
+
+.gallery_row .img_container img {
+    width: 100%;
+    border-radius: 24px;
+}
