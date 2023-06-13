@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 200px;
+}
+h1, h2, h3 {
+    font-family: 'Staatliches', sans-serif;
+}
+p, blockquote, li, a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background-color: peachpuff;
+    padding: 25px;
+    border-bottom: 5px double teal;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+nav a, nav a:visited {
+    color: black;
+    text-decoration: none;
+    transition: all 1s;
+}
+nav a:hover {
+    color: teal;
+    text-decoration: underline;
+}
+
+body {
+    background: linear-gradient(45deg, rgba(152, 255, 240, 0.5), rgba(255, 157, 0, 0.5));
+}
+
+main {
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: teal;
+    text-align: center;
+    padding: 25px 0 5px 0;
+    font-size: 50px;
+}
+#first-line {
+    border: none;
+    border-bottom: 5px double teal;
+}
+
+section.card {
+    padding: 25px 20px;
+    margin: 25px 0;
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: double groove;
+    border-color: teal;
+    border-width: 10px;
+}
+section.card h2 {
+    color: teal;
+    font-size: 30px;
+}
+section.card hr {
+    border: none;
+    border-bottom: 5px double teal;
+    margin: 15px 0;
+}
+section.card img {
+    border-radius: 50px;
+}
+
+section.card:nth-of-type(2) p{
+    display: inline-block;
+    width: 200px;
+    margin-right: 25px;
+}
+section.card:nth-of-type(2) p:last-of-type {
+    margin-right: 0;
+}
+section.card:nth-of-type(2) img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.card:last-of-type img {
+    float: right;
+    width: 200px;
+    margin: 0 0 20px 25px;
+}
+.clear {
+    clear: both;
+}
+
+footer {
+    border-top: 5px double teal;
+    text-align: center;
+    padding: 25px 0;
+    background-color: peachpuff;
+}
