@@ -99,9 +99,18 @@ header #mainnav .drop {
     opacity: 1;
     visibility: visible;
 }
-.drop ul li {
+#mainnav .drop ul li {
     margin: 0 0 .5rem 0;
 }
 .drop ul li:last-of-type {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 775px) {
+    .drop ul {
+        width: 100vw;
+        left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%)
+    }
 }
