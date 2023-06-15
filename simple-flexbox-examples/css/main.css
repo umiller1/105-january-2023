@@ -1,0 +1,31 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+/*  
+    the styles above allow for me to center the content vertically and horizontally while also placing the div with the text and the image side-by-side.
+        
+    display: flex; lets me sit the div and image next to each other.
+        
+    having a set width and height allows me to use justify content and align items to center the content horizontally and vertically
+*/
+  
+img {
+    width: 50%;
+    max-width: 500px;
+    border: 1px solid black;
+    margin-left: 5rem;
+}
+/*
+    applying a margin to the left of the image allows me to add spacing between the image and the text. This can also be applied to the div that holds to text for the same effect.
+
+    the other styles I appied on it are just to make it look somewhat pretty.
+*/
+
+h1, p {
+    max-width: 500px;
+}
