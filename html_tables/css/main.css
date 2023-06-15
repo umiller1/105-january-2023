@@ -1,0 +1,12 @@
+#fun, #fun caption, #fun th, #fun td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 12px;
+}
+#fun {
+    margin-bottom: 48px;
+}
+#colspan {
+    /* demonstrates how colspan can apply to the columns */
+    background-color: grey;
+}
