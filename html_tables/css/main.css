@@ -8,5 +8,27 @@
 }
 #colspan {
     /* demonstrates how colspan can apply to the columns */
-    background-color: grey;
+    background-color: seashell;
+}
+#funrow {
+    background-color: #532485;
+    color: white;
+}
+#funcell, #fun tbody tr:nth-of-type(2){
+    background-color: #505e63;
+    color: white;
+}
+#fun tbody tr:nth-of-type(3) {
+    background-color: #03fcc6;
+}
+#fun tbody tr:nth-of-type(4) {
+    background-color: #113062;
+    color: white;
+}
+#fun tbody tr:nth-of-type(5) {
+    background-color: #fff39c;
+}
+#fun tbody tr:nth-of-type(6) {
+    background-color: #7030d6;
+    color: white;
 }
