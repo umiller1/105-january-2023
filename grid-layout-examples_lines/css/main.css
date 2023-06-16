@@ -1,0 +1,10 @@
+.myGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+}
+header {
+    background-color: aquamarine;
+    padding: 36px;
+    grid-column: 1 / 4;
+}
