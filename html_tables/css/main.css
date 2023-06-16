@@ -32,3 +32,25 @@
     background-color: #7030d6;
     color: white;
 }
+
+/* basic table styles. Reference for your exercises */
+#basic {
+    border-collapse: collapse;
+}
+#basic th {
+    padding: 0 25px 12px 0;
+}
+#basic td {
+    padding: 4px 0;
+}
+#basic tr:nth-child(even) {
+    background-color: green;
+    color: white;
+}
+#basic tr:nth-child(odd) {
+    background-color: grey;
+    color: white;
+}
+#basic tr:hover {
+    background-color: burlywood;
+}
