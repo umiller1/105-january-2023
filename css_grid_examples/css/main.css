@@ -1,0 +1,11 @@
+#my_grid {
+    display: grid;
+    grid-template-columns: 1fr 150px 650px 1fr;
+    grid-template-areas:
+    ". nav nav ."
+    ". sidebar content1 ."
+    ". sidebar content2 ."
+    ". sidebar content3 ."
+    ". sidebar content4 ."
+    ". footer footer .";
+}
