@@ -7,4 +7,16 @@ header {
     background-color: aquamarine;
     padding: 36px;
     grid-column: 1 / 4;
+    grid-row: 1;
+}
+nav {
+    background-color: cornflowerblue;
+    padding: 36px;
+    grid-column: 1;
+    grid-row: 2;
+}
+main {
+    padding: 36px;
+    grid-column: 2 / 4;
+    grid-row: 2;
 }
