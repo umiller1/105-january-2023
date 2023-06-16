@@ -9,3 +9,35 @@
     ". sidebar content4 ."
     ". footer footer .";
 }
+.block {
+    padding: 50px;
+    font-size: 36px;
+}
+.block_1 {
+    background-color: pink;
+    grid-area: content2;
+}
+.block_2 {
+    background-color: teal;
+    grid-area: content3;
+}
+.block_3 {
+    background-color: palegoldenrod;
+    grid-area: sidebar;
+}
+.block_4 {
+    background-color: palegreen;
+    grid-area: content4;
+}
+.block_5 {
+    background-color: crimson;
+    grid-area: content1;
+}
+.block_6 {
+    background-color: chocolate;
+    grid-area: footer;
+}
+.block_7 {
+    background-color: steelblue;
+    grid-area: nav;
+}
