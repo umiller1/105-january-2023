@@ -65,6 +65,31 @@ footer a:hover {
     ". two_cards_area ."
     "footer_area footer_area footer_area";
 }
+section {
+    border: 4px solid indigo;
+}
+nav {
+    grid-area: nav_area;
+}
+#hero {
+    grid-area: hero_area;
+}
+#three_cards {
+    grid-area: three_cards_area;
+}
+#carousel_container {
+    grid-area: carousel_area;
+}
+#gallery_container {
+    grid-area: gallery_area;
+}
+#two_cards {
+    grid-area: two_cards_area;
+}
+footer {
+    grid-area: footer_area;
+}
+
 /****************************************************************************
   Nav/Footer styles
 ****************************************************************************/
