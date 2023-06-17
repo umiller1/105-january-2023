@@ -21,3 +21,23 @@ main {
     padding: 36px;
     grid-area: content;
 }
+
+@media screen and (max-width: 480px) {
+    .myGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "myHeader"
+        "sidenav"
+        "content";
+    }
+    header, nav, main {
+        padding: 18px;
+    }
+    header, nav {
+        text-align: center;
+    }
+    header h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+}
