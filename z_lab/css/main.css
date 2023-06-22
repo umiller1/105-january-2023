@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -36,8 +38,12 @@
   }
   p {
     font-size: 2rem;
-    line-height: 1.5em;
     text-align: center;
+  }
+  p.proj {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    text-decoration: underline;
   }
   
   .wave {
@@ -56,11 +62,11 @@
     padding: 10px;
     border-radius: 50%; 
     background: conic-gradient(
-          #ffb300 ,
+          #00FFA8 ,
           #0000 30deg 120deg,
-          #ff0080 150deg 180deg,
+          #FF7B5A 150deg 180deg,
           #0000 210deg 300deg,
-          #ffb300 330deg
+          #00FFA8 330deg
       );
     -webkit-mask:
       linear-gradient(#000 0 0) content-box,
@@ -73,8 +79,8 @@
     position: absolute;
     inset: -100px;
     background:
-      radial-gradient(200px at left  400px top 150px,#ffb300 100%,#0000),
-      radial-gradient(200px at right 400px bottom 150px,#ff0080 100%,#0000);
+      radial-gradient(300px at left  400px top 150px,#00FFA8 100%,#0000),
+      radial-gradient(300px at right 400px bottom 150px,#FF7B5A 100%,#0000);
     filter: blur(120px);
     opacity: .5;
   }
@@ -83,12 +89,12 @@
   .wave:after {
     transition:.5s, 99999s 99999s transform;
   }
-  .wave:hover {
+  body:hover .wave {
     box-shadow: 0 0 0 1px #666;
   }
   
-  .wave:hover:before,
-  .wave:hover:after {
+  body:hover .wave:before,
+  body:hover .wave:after {
     transform: rotate(36000deg);
     transition: .5s,600s linear transform;
   }
