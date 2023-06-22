@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borer-box;
+  }
+  
+  body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  div {
+    width: 85vh;
+    height: 85vh;
+    border-radius: 100%;
+    background-color: #BBDFFA;
+    color: white;
+    border: 10px ridge #CCB100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  
+  .wave {
+    background: none;
+    border: none;
+    border-radius: 50%; 
+    position: relative;
+    z-index: 0;
+    transition: .3s;
+    cursor: pointer;
+  }
+  .wave:before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    padding: 10px;
+    border-radius: 50%; 
+    background: conic-gradient(
+          #ffb300 ,
+          #0000 30deg 120deg,
+          #ff0080 150deg 180deg,
+          #0000 210deg 300deg,
+          #ffb300 330deg
+      );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: intersect
+  }
+  .wave:after {
+    content: "";
+    position: absolute;
+    inset: -100px;
+    background:
+      radial-gradient(200px at left  400px top 150px,#ffb300 100%,#0000),
+      radial-gradient(200px at right 400px bottom 150px,#ff0080 100%,#0000);
+    filter: blur(120px);
+    opacity: .5;
+  }
+  
+  .wave:before,
+  .wave:after {
+    transition:.5s, 99999s 99999s transform;
+  }
+  .wave:hover {
+    box-shadow: 0 0 0 1px #666;
+  }
+  
+  .wave:hover:before,
+  .wave:hover:after {
+    transform: rotate(36000deg);
+    transition: .5s,600s linear transform;
+  }
+  .wave:before {
+    background-color: #222;
+      border: 2px solid #333;
+  }
