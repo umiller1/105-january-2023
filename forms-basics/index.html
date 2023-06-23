@@ -20,7 +20,37 @@
             <p>* indicates required fields</p>
 
             <div class="text_input">
+                <label for="first_name_id">First Name *:</label>
+                <input
+                required
+                id="first_name_id"
+                name="first_name"
+                type="text"
+                minlength="2"
+                maxlength="15">
+            </div>
+            <div class="text_input">
+                <label for="last_name_id">Last Name:</label>
+                <input type="text" id="last_name_id" name="last_name">
+            </div>
+            <div class="text_input">
+                <label for="email_id">Email:</label>
+                <input type="email" id="email_id" name="email">
+            </div>
+            <div class="text_input">
+                <label for="password_id">Password:</label>
+                <input type="password" id="password_id" name="password">
+            </div>
 
+            <h2>Textarea Input</h2>
+            <h4>Each textarea should also have a unique 'name' attribute</h4>
+
+            <div class="text_input">
+                <label for="code_feelings_id">How do you feel about programming?</label>
+                <textarea
+                id="code_feelings_id"
+                name="code_feelings"
+                placeholder="This is the default text for a text area"></textarea>
             </div>
         </fieldset>
     </form>
