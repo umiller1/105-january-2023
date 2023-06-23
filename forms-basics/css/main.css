@@ -1,0 +1,12 @@
+.text_input label {
+    display: block;
+    font-family: sans-serif;
+}
+
+.text_input input {
+    margin: 4px 0 16px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    width: 300px;
+}
