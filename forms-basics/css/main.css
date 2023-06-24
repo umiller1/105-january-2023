@@ -4,9 +4,47 @@
 }
 
 .text_input input {
+    /* 3 value margin represent:
+    top, left/right, bottom */
     margin: 4px 0 16px;
     padding: 12px;
     font-size: 18px;
     font-family: Verdana, sans-serif;
     width: 300px;
+}
+
+#first_name_id {
+    border: 0;
+    border-bottom: 4px solid blue;
+}
+
+#first_name_id:focus-visible {
+    outline: 0;
+    background-color: rgb(197, 238, 254);
+}
+
+/* #first_name_id:invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+} */
+
+#first_name_id:not(:focus):invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+}
+
+#first_name_id:valid {
+    background-color: lightgreen;
+    border-bottom: 4px solid green;
+}
+
+input[type=email]:invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+}
+
+#last_name_id {
+    border: 5px solid lightgreen;
+    border-radius: 24px;
+    color: darkgreen;
 }
