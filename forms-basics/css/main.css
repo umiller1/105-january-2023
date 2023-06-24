@@ -109,3 +109,17 @@ input[type=reset] {
 input[type=reset]:active {
     background: linear-gradient(to top, purple, orange);
 }
+
+input[type=submit] {
+    background: linear-gradient(to bottom, skyblue, pink);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 48px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+input[type=submit]:active {
+    background: linear-gradient(to top, skyblue, pink);
+}
