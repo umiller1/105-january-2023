@@ -76,3 +76,36 @@ input[type=email]:invalid {
     background-color: pink;
     color: aqua;
 }
+
+#buttons {
+    margin-bottom: 400px;
+}
+
+input[type=button] {
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+input[type=reset] {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 12px;
+    margin-right: 12px;
+    background: linear-gradient(to bottom, purple, orange);
+    color: white;
+    cursor: pointer;
+}
+/* 
+    the :active pseudo-class is used 
+    to style the click state
+*/
+input[type=reset]:active {
+    background: linear-gradient(to top, purple, orange);
+}
