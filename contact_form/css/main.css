@@ -1,0 +1,20 @@
+body {
+    background-color: #eeeeee;
+    font-family: sans-serif;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-areas:
+    ". header ."
+    ". form .";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: form;
+}
