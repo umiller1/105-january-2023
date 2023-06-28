@@ -1,0 +1,73 @@
+/* Margin vs Padding */
+/*
+    Margin is the spacing around the outer layer of an element, outside of the border. It controls the spacing between elements that are adjacent to the element it is applied to.
+    
+    Padding is the spacing inside of an element, within the border. It controls the spacing on the inside of an element and can control how close to the edges the elements inside of it are.
+
+    Both padding and margin can be targetted individually or in shorthand.
+
+    Adding -right, -left, -top, or -bottom to padding or margin will only affect the amount of spacing in that direction (i.e. margin-left: 20px; applies a left margin of 20px;)
+
+    Using just margin or padding and then a value will create shorthand margin.
+    1 value is top, left, bottom and right.
+    2 values are top/bottom and left/right.
+    3 values are top, left/right, bottom.
+    4 values are top, right, bottom, left.
+ */
+.marg, .pad, a {
+    width: 200px;
+    height: 300px;
+    background-color: palegreen;
+    border: 2px solid black;
+}
+.pad {
+    background-color: palevioletred;
+    padding: 20px 50px 0 20px;
+}
+.pad div {
+    width: 50%;
+    height: 50%;
+    background-color: darkblue;
+}
+.marg {
+    margin: 50px 20px;
+    display: inline-block;
+}
+
+/* Targetting specific elements */
+div {
+    box-sizing: border-box;
+}
+#specific {
+    background-color: grey;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+}
+#specific div {
+    width: 50px;
+    height: 20px;
+    background-color: yellow;
+}
+.this {
+    border: 5px solid red;
+    margin: 10px;
+}
+.this h1 {
+    font-size: 40px;
+}
+.this h1 + p {
+    color: white;
+    font-family: cursive;
+}
+.this h1 ~ p {
+    text-shadow: 5px 10px 10px black;
+}
+input[type=submit] {
+    background-color: teal;
+    width: 200px;
+    height: 300px;
+}
+input:hover {
+    background-color: yellow;
+}
