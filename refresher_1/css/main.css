@@ -41,6 +41,8 @@ Table of Contents
  }
  .padding .margpad-box {
     margin-top: 20px;
+    /* You can also use negative margin or padding as demonstrated below. */
+    /* margin-top: -50px; */
  }
  .margin-center {
     margin: 30px auto 10px auto;
@@ -54,12 +56,108 @@ Table of Contents
  }
 
 /* 2. CSS Selectors (the many ways to target html elements with CSS)  */
+#cs div {
+    margin: 20px auto;
+    width: 500px;
+}
+#id_selector {
+    background-color: powderblue;
+    margin: 0;
+    width: 200px;
+}
+.best_divs {
+    background-color: papayawhip;
+    border: 1px solid black;
+    padding: 20px;
+}
+.coolors {
+    border-color: red;
+    background-color: grey;
+    color: white;
+}
+#cs [href] {
+    color: black;
+    font-family: cursive;
+    margin: 20px auto;
+    background-color: pink;
+    display: inline-block;
+}
+#cs input[type=submit] {
+    background-color: teal;
+    color: white;
+    font-size: 2rem;
+}
+#cs section p {
+    margin: 20px auto;
+    width: 300px;
+    font-size: 1.5rem;
+}
+/* Below are three different ways to target siblings without classes or ids */
+#cs section p + p {
+    color: purple;
+    text-decoration: underline;
+}
+#cs section p:last-of-type {
+    font-size: 1rem;
+}
+#cs section p:nth-of-type(2) {
+    letter-spacing: .5rem;
+}
+#cs section a {
+    transition: all .5s;
+}
+#cs section a:hover {
+    border: 2px solid black;
+    padding: 2rem;
+    background-color: powderblue;
+}
+#cs section input:focus-within {
+    background-color: green;
+    color: white;
+}
+#cs section input:active {
+    background-color: pink;
+}
 
-/* 3. IDs vs Classes and when to use them  */
+/* 3. Flex, Flex-Basis, and Flex-Grow  */
+.grow p:first-child {
+    flex-grow: 1;
+}
+.shrink p {
+   width: 50%;
+}
+.shrink p:first-child {
+    flex-shrink: 5;
+}
+.basis {
+    flex-wrap: wrap;
+}
+.basis p:first-child {
+    flex-basis: 100%;
+}
+/*
+    Flex is shorthand for flex-grow, flex-shrink, and flex-basis.
+    1st value is flex-grow
+    2nd value is flex-shrink
+    3rd value is flex-basis
 
-/* 4. Memorising div Placements  */
+    If you use two value Flex
+    1st value is flex-grow
+    2nd value is either your flex-shrink or flex-basis
+    Flex-basis requires a unit to activate. Without a unit, the value defaults to flex-shrink.
 
-/* 5. Flex, Flex-Basis, and Flex-Grow  */
+    One value Flex is either Flex-Grow or Flex-Basis if a unit is involved.
+ */
+.shorthand p:first-child {
+    flex: 2;
+    transition: all .5s;
+}
+.shorthand p:last-child {
+    flex: 5;
+}
+.shorthand p:first-child:hover {
+    flex: 8;
+}
 
 /* ---- */
 /* ---- */
