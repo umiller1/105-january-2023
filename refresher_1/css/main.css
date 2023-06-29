@@ -1,0 +1,170 @@
+* { /* The star symbol selector targets every element in the HTML, making it great for creating 'resets' which are how we remove pre-existing styles that the browser automatically applies to elements */
+    margin: 0;
+    padding: 0;
+    /* The styles above removes the default margin and padding that browsers apply to elements. This makes it easier to set our own spacing.*/
+    box-sizing: border-box;
+    /* The box-sizing by default is set to content-box, which will cause children to overflow/extend/grow beyond their parent/container when they become too large.
+    Setting it to border-box will keep the children contained within their parent/container because it will factor in border and padding values unlike the above. */
+}
+/*
+Table of Contents
+    1. Margin and Padding 
+    2. CSS Selectors (the many ways to target html elements with CSS) 
+    3. IDs vs Classes and when to use them 
+    4. Memorising div Placements 
+    5. Flex, Flex-Basis, and Flex-Grow
+ */
+/* 1. Margin vs Padding */
+/*
+    Margin is the spacing around the outer layer of an element, outside of the border. It controls the spacing between elements that are adjacent to the element it is applied to.
+    
+    Padding is the spacing inside of an element, within the border. It controls the spacing on the inside of an element and can control how close to the edges the elements inside of it are.
+
+    Both padding and margin can be targetted individually or in shorthand.
+
+    Adding -right, -left, -top, or -bottom to padding or margin will only affect the amount of spacing in that direction (i.e. margin-left: 20px; applies a left margin of 20px;)
+
+    Using just margin or padding and then a value will create shorthand margin.
+    1 value is top, left, bottom and right.
+    2 values are top/bottom and left/right.
+    3 values are top, left/right, bottom.
+    4 values are top, right, bottom, left.
+ */
+
+/* 2. CSS Selectors (the many ways to target html elements with CSS)  */
+
+/* 3. IDs vs Classes and when to use them  */
+
+/* 4. Memorising div Placements  */
+
+/* 5. Flex, Flex-Basis, and Flex-Grow  */
+
+/* 6. Bootstrap */
+
+/* Irrelevant Nav and General Styles */
+section {
+    border: 2px solid #1a1a1a;
+    margin: 1.5rem auto;
+}
+main section:first-of-type {
+    margin-top: 3rem;
+}
+main section:last-of-type {
+    margin-bottom: 3rem;
+}
+body {
+    background-color: #efefef;
+    display: flex;
+    flex-flow: column wrap;
+}
+main {
+    order: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav, footer {
+    width: 100vw;
+    background-color: #1a1a1a;
+    padding: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    margin: 0 auto;
+}
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    order: 1;
+}
+footer {
+    order: 4;
+    margin-bottom: 150px;
+    background-color: grey;
+}
+nav a, footer a {
+    color: #efefef;
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #1a1a1a;
+    transition: all .5s;
+}
+footer a {
+    border-color: grey;
+}
+nav a:hover, footer a:hover {
+    color: aqua;
+    border-bottom: 2px solid aqua;
+    font-size: 1.25rem;
+}
+h3 {
+    color: #efefef;
+    background-color: grey;
+    padding-left: 1rem;
+    font-size: 2rem;
+    margin: 0 auto;
+    order: 3;
+    width: 100vw;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* irrelevant margin vs padding styles */
+#mvp .mvp-container {
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+}
+#mvp .mvp-container-2 {
+    border: 2px solid blue;
+}
+.mvp-container .margin-a {
+    background-color: palegreen;
+    width: 30%;
+}
+.mvp-container .padding {
+    background-color: paleturquoise;
+    width: 30%;
+}
+.padding .margpad-box {
+    background-color: peachpuff;
+    width: 50%;
+}
+.mvp-container .margin-b {
+    background-color: palegoldenrod;
+    width: 30%;
+}
+.margin-center {
+    background-color: pink;
+    width: 50%;
+}
+.margin-c {
+    background-color: lightsalmon;
+    width: 50%;
+}
+/* irrelevant css selectors styles */
+input {
+    padding: 20px;
+}
+
+/* irrelevant ids vs classes styles */
+#ivc {
+    padding: 1rem 0;
+}
+#ivc p, hr {
+    max-width: 600px;
+    padding-top: 1rem;
+}
+/* irrelevant memorizing div placements styles */
+ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+    padding-top: .5rem;
+}
+ul li span {
+    padding-left: .5rem;
+}

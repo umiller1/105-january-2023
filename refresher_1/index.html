@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <title>HTML, CSS, Bootstrap Refresher</title>
+    <!--
+    Table of Contents
+    1. Margin and Padding 
+    2. CSS Selectors (the many ways to target html elements with CSS) 
+    3. IDs vs Classes and when to use them 
+    4. Memorizing div Placements 
+    5. Flex, Flex-Basis, and Flex-Grow 
+    6. Bootstrap
+    -->
+</head>
+<body>
+    <main>
+    <!-- 1. Margin and Padding  -->
+        <section id="mvp">
+            <h2>Margin vs Padding</h2>
+            <div class="mvp-container">
+                <div class="margin-a">
+                    I have a right margin applied to me. I am pushing elements to the right of me away to create spacing.
+                </div>
+                <div class="padding">
+                    I have padding applied inside of me. I am pushing the elements that are contained within me from my edges with the padding.
+                    <div class="margpad-box">
+                        I am a child inside of another element. The element i'm inside of has padding applied to it, which is pushing me away from it's edges. I also have a top margin applied to myself, to push any elements above me away to create space.
+                    </div>
+                </div>
+                <div class="margin-b">
+                    I have a left margin applied to me. I am pushing elements to the left of me away to create spacing.
+                </div>
+            </div>
+            <div class="mvp-container-2">
+                <div class="margin-center">
+                    I have margin applied to the top and bottom of myself. I am pushing elements above and elements below me away to create spacing. I am using auto margin on my left and right sides to generate an as much equal spacing as I need for my size.
+                </div>
+                <div class="margin-c">
+                    I have no margin on the top or bottom of me but I am using a set number of margin to the left and right of me to create different amounts of spacing on both sides.
+                </div>
+            </div>
+        </section>
+
+    <!-- 2. CSS Selectors (the many ways to target html elements with CSS)  -->
+        <section id="cs">
+            <h2>CSS Selectors</h2>
+            <div>You can select me using the regular HTML Selector</div>
+            <div>The above will also select me!</div>
+            <div>and me too! This is because your using the base level of specificity, which is going apply to all elements of named after that selector, in our case, all divs.</div>
+            <div id="id_selector">However, by targeting my ID, you can remove some or all of the previous styling you applied to the divs before me as well as add new styles to me. Don't forgut to use the <b>#</b> symbol right before the ids name when targetting it with css. IDs are best used when you want to make something unique or different from the others.</div>
+            <div class="best_divs">You can also target classes by using the <b>"."</b> symbol just before you write our name in css.</div>
+            <div class="best_divs">That will target me as well since I have the same class name.</div>
+            <div class="best_divs coolors">Classes are best used when you want elements to share the same styles.</div>
+            <div class="best_divs coolors">You can also add multiple classes by putting a space between each class name in your html class attribute value. Notice how me and the div before me share some values together that the two before us don't share.</div>
+            <a href="#">You can target html elements by their attributes too. You'll have to write the element name, class name, or id name followed by the attribute enclosed in square brackets like so</a>
+            <input type="submit" value="a[href] OR input[type=&lsquo; &rsquo;submit&lsquo; &rsquo;]">
+        </section>
+
+    <!-- 3. IDs vs Classes and when to use them  -->
+        <section id="ivc">
+            <h2>IDs vs Classes</h2>
+            <p>As stated above, you'll want to use IDs when you need to apply unique or specific styles to an element that you don't want applied to anything else except for the element with the id on it. Think logos, main navigations, sidebar navs, footers, etc. Not all of these elements require IDs but sometimes you'll have multiple of the same element and you want one in particular to stand out or be different from the others.</p>
+            <br>
+            <p>An ID can only be used once per html file. Never duplicate IDs in an html file, always give other IDs different names.</p>
+            <br>
+            <hr>
+            <br>
+            <p>Classes on the other hand are used when you want to apply the same styles to the same or different elements. Classes can be applied and duplicated as many times as you want. Think back to the .card classes we used in previous assignments to give sections and divs the same borders, padding, and margin!</p>
+            <br>
+            <p>Why use a class instead of a general HTML selector? Well simple! Here's an example: If you wanted to target every and any div to exist in your html, then you can use a general html selector. If you wanted to target every and any div that is inside of every and any section, then you can use a general html selector as well! However, if you only wanted to target every div that exist inside of your second section or your section with an id on it, then you can apply classes to each of those divs to target them!</p>
+        </section>
+
+    <!-- 4. Memorizing div Placements  -->
+        <section id="mdp">
+            <h2>Memorising Div Placements</h2>
+            <p>When we have a bunch of divs in a document, the best ways to remember them are:</p>
+            <ul>
+                <li>Having good indentation.<br>
+                <span>This allows us to see where everything is nested, including divs.</span></li>
+                <li>Applying classes and ids to divs that need them.</li>
+                <li>Using HTML comments to separate them or create line breaks that only appear in the html file and not to the end user.</li>
+            </ul>
+        </section>
+
+    <!-- 5. Flex, Flex-Basis, and Flex-Grow  -->
+        <section id="fbg">
+            <h2>Flex, Flex-Basis, Flex-Grow</h2>
+        </section>
+
+    <!-- 6. Bootstrap -->
+        <section id="boot">
+            <a href="refresher-bootstrap.html" target="_blank">Bootstrap needs it's own HTML for the refresher. Don't worry, This link will take you to the bootstrap refresher.</a>
+        </section>
+    
+    </main>
+    <!-- Irrelevant Navigation Stuff -->
+    <nav>
+        <a href="#mvp">Margin vs Padding</a>
+        <a href="#cs">CSS Selectors / Ways to Target HTML Elements in CSS</a>
+        <a href="#ivc">IDs vs Classes</a>
+        <a href="#mdp">Memorising div Placements</a>
+        <a href="#fbg">Flex, Flex-Basis, and Flex-Grow</a>
+        <a href="#boot">Bootstrap</a>
+        <a href="#foot">Documentation and Resources</a>
+    </nav>
+    <h3 id="foot">Documentation and Resources</h3>
+    <footer>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">
+            Margin Docs
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">
+            Padding Docs
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">
+            CSS Selectors
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class" target="_blank">
+            Class Docs
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id" target="_blank">
+            ID Docs
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">
+            Flex Docs
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">
+            Flex-Basis Docs
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank">
+            Flex-Grow Docs
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">
+            Box-Sizing
+        </a>
+    </footer>
+</body>
+</html>
