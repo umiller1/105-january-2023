@@ -13,7 +13,8 @@
     3. IDs vs Classes and when to use them 
     4. Memorizing div Placements 
     5. Flex-Grow, Flex-Shrink, Flex-Basis and Flex 
-    6. Bootstrap
+    6. Form Method Attribute: GET vs POST
+    7. Bootstrap
     -->
 </head>
 <body>
@@ -117,8 +118,24 @@
             </div>
         </section>
 
-    <!-- 6. Bootstrap -->
+    <!-- 6. Form Method Attribute: GET vs POST -->
+        <section id="gvp">
+            <h2>Form Method: GET vs POST</h2>
+            <br>
+            <p>
+                The GET method is the default method for HTML forms and is used by the browser to ask the server to send back a given resource: "Hey server, I want to get this resource." In this case, the browser sends an empty body. Because the body is empty, if a form is sent using this method the data sent to the server is appended to the URL.
+            </p>
+            <br>
+            <p>
+                The POST method is a little different. It's the method the browser uses to talk to the server when asking for a response that takes into account the data provided in the body of the HTTP request: "Hey server, take a look at this data and send me back an appropriate result." If a form is sent using this method, the data is appended to the body of the HTTP request.
+            </p>
+            <br>
+            <a href="https://www.w3schools.com/tags/att_form_method.asp" target="_blank">W3Schools notes on it</a>
+        </section>
+
+    <!-- 7. Bootstrap -->
         <section id="boot">
+            <h2>Bootstrap</h2>
             <a href="refresher-bootstrap.html" target="_blank">Bootstrap needs it's own HTML for the refresher. Don't worry, This link will take you to the bootstrap refresher.</a>
         </section>
     
@@ -130,6 +147,7 @@
         <a href="#ivc">IDs vs Classes</a>
         <a href="#mdp">Memorising div Placements</a>
         <a href="#fbg">Flex-Grow, Flex-Shrink, Flex-Basis and Flex</a>
+        <a href="#gvp">Form Method Attribute: GET vs POST</a>
         <a href="#boot">Bootstrap</a>
         <a href="#foot">Documentation and Resources</a>
     </nav>
@@ -158,6 +176,9 @@
         </a>
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank">
             Flex-Grow Docs
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data#the_method_attribute" target="_blank">
+            Form Method
         </a>
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">
             Box-Sizing

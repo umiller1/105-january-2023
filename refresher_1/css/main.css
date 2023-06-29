@@ -39,8 +39,10 @@ Table of Contents
 
 /* 5. Flex, Flex-Basis, and Flex-Grow  */
 
-/* 6. Bootstrap */
+/* ---- */
+/* ---- */
 
+/* THE STYLES BELOW ARE IRRELEVANT TO THE REFRESHER */
 /* Irrelevant Nav and General Styles */
 section {
     border: 2px solid #1a1a1a;
@@ -72,14 +74,10 @@ nav, footer {
     margin: 0 auto;
 }
 nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     order: 1;
 }
 footer {
     order: 4;
-    margin-bottom: 150px;
     background-color: grey;
 }
 nav a, footer a {
@@ -175,7 +173,6 @@ ul li span {
     margin: 25px auto;
 }
 #fbg div p {
-    min-width: 25%;
     min-height: 200px;
     background-color: lightskyblue;
 }
@@ -184,4 +181,50 @@ ul li span {
 }
 #fbg div p:last-of-type {
     background-color: lightgreen;
+}
+
+/* GET VS POST */
+#gvp {
+    padding: 10px;
+}
+#gvp p {
+    max-width: 600px;
+}
+#gvp a {
+    color: darkorchid;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .5s;
+}
+#gvp a:hover {
+    color: blue;
+    font-size: 1.5rem;
+}
+
+/* bootstrap stuff */
+#boot {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-size: 2rem;
+}
+#boot a {
+    background-color: orange;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 3px solid orange;
+    transition: all .5s;
+}
+#boot a:hover {
+    background-color: rgb(255, 165, 0, .2);
+    color: orange;
+    backdrop-filter: blur(8px);
 }
