@@ -30,6 +30,28 @@ Table of Contents
     3 values are top, left/right, bottom.
     4 values are top, right, bottom, left.
  */
+ .margin-a {
+    margin-right: 20px;
+ }
+ .margin-b {
+    margin-left: 50px;
+ }
+ .padding {
+    padding: 20px 10px;
+ }
+ .padding .margpad-box {
+    margin-top: 20px;
+ }
+ .margin-center {
+    margin: 30px auto 10px auto;
+ }
+ .margin-c {
+    margin: 0 30px;
+    display: inline-block;
+    /*
+    Display inline-block is used to allow other elements that are inline or inline-block sit next to this div. This demonstrates
+    */
+ }
 
 /* 2. CSS Selectors (the many ways to target html elements with CSS)  */
 
