@@ -12,7 +12,7 @@
     2. CSS Selectors (the many ways to target html elements with CSS) 
     3. IDs vs Classes and when to use them 
     4. Memorizing div Placements 
-    5. Flex, Flex-Basis, and Flex-Grow 
+    5. Flex-Grow, Flex-Shrink, Flex-Basis and Flex 
     6. Bootstrap
     -->
 </head>
@@ -57,7 +57,13 @@
             <div class="best_divs coolors">Classes are best used when you want elements to share the same styles.</div>
             <div class="best_divs coolors">You can also add multiple classes by putting a space between each class name in your html class attribute value. Notice how me and the div before me share some values together that the two before us don't share.</div>
             <a href="#">You can target html elements by their attributes too. You'll have to write the element name, class name, or id name followed by the attribute enclosed in square brackets like so</a>
-            <input type="submit" value="a[href] OR input[type=&lsquo; &rsquo;submit&lsquo; &rsquo;]">
+            <input type="submit" value="a[href] OR input[type=submit]">
+            <section>
+                <p>You can also target children!</p>
+                <p>And their adjacent siblings</p>
+                <a href="#">Along with hover, focus, and active states!</a>
+                <input type="text" placeholder="Active states too!">
+            </section>
         </section>
 
     <!-- 3. IDs vs Classes and when to use them  -->
@@ -86,9 +92,29 @@
             </ul>
         </section>
 
-    <!-- 5. Flex, Flex-Basis, and Flex-Grow  -->
+    <!-- 5. Flex-Grow, Flex-Shrink, Flex-Basis and Flex  -->
         <section id="fbg">
-            <h2>Flex, Flex-Basis, Flex-Grow</h2>
+            <h2>Flex-Grow, Flex-Shrink, Flex-Basis and Flex</h2>
+            <div class="grow">
+                <p>Watch me grow!</p>
+                <p>I'll remain the same!</p>
+                <p>I'll remain the same!</p>
+            </div>
+            <div class="shrink">
+                <p>Watch me shrink!</p>
+                <p>I'll remain the same!</p>
+                <p>I'll remain the same!</p>
+            </div>
+            <div class="basis">
+                <p>Watch me force the others to wrap!</p>
+                <p>Watch me grow!</p>
+                <p>Watch me shrink!</p>
+            </div>
+            <div class="shorthand">
+                <p>Flex will let me do whatever I want without a bunch of CSS!</p>
+                <p>I'll Remain the Same!</p>
+                <p>Flex will let me do whatever I want without a bunch of CSS!</p>
+            </div>
         </section>
 
     <!-- 6. Bootstrap -->
@@ -103,7 +129,7 @@
         <a href="#cs">CSS Selectors / Ways to Target HTML Elements in CSS</a>
         <a href="#ivc">IDs vs Classes</a>
         <a href="#mdp">Memorising div Placements</a>
-        <a href="#fbg">Flex, Flex-Basis, and Flex-Grow</a>
+        <a href="#fbg">Flex-Grow, Flex-Shrink, Flex-Basis and Flex</a>
         <a href="#boot">Bootstrap</a>
         <a href="#foot">Documentation and Resources</a>
     </nav>

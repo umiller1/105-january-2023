@@ -12,7 +12,7 @@ Table of Contents
     2. CSS Selectors (the many ways to target html elements with CSS) 
     3. IDs vs Classes and when to use them 
     4. Memorising div Placements 
-    5. Flex, Flex-Basis, and Flex-Grow
+    5. Flex-Grow, Flex-Shrink, Flex-Basis and Flex
  */
 /* 1. Margin vs Padding */
 /*
@@ -167,4 +167,21 @@ ul {
 }
 ul li span {
     padding-left: .5rem;
+}
+
+/* irrelevant Flex-Grow, Flex-Shrink, Flex-Basis and Flex styles */
+#fbg div {
+    display: flex;
+    margin: 25px auto;
+}
+#fbg div p {
+    min-width: 25%;
+    min-height: 200px;
+    background-color: lightskyblue;
+}
+#fbg div p:first-of-type {
+    background-color: lightcoral;
+}
+#fbg div p:last-of-type {
+    background-color: lightgreen;
 }
