@@ -15,7 +15,8 @@ header img {
 }
 
 main {
-    width: 600px;
+    max-width: 600px;
+    width: 70%;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
