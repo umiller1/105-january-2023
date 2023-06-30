@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box !important;
+}
+
+nav a:hover  {
+    color: #003a97 !important;
+    text-decoration: underline !important;
+}
+a {
+    transition: all .5s;
+}
+
+#hero {
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(https://images.unsplash.com/photo-1678875204058-b4def4fd30c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80) !important;
+    background-size: cover !important;
+    min-height: 400px !important;
+}
+
+#herobtn:hover {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+#sect2 h2 {
+    flex-basis: 100%;
+}
+#sect2 a:hover {
+    color: #ffc107 !important;
+    background-color: transparent !important;
+}
