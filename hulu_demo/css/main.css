@@ -206,3 +206,30 @@ footer img {
     background-image: url(../images/houseofdragon.jpeg);
 }
 
+@media screen and (max-width: 768px) {
+    .btn-link {
+        width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 36px;
+        row-gap: 24px;
+    }
+    #cards_section {
+        padding: 0 24px;
+    }
+    #cards_section p {
+        width: 100%;
+    }
+    #cards_container {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    #cards_container div {
+        background-repeat: no-repeat;
+    }
+    #cards_container h4 {
+        font-weight: normal;
+    }
+}
