@@ -171,7 +171,8 @@ footer img {
 
 #cards_container div {
     padding-left: 24px;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     border-radius: 8px;
     border: 4px solid #040405;
     outline: 4px solid transparent;
