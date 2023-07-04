@@ -122,3 +122,48 @@ footer img {
 .clear_button_link:hover {
     opacity: 0.5;
 }
+
+.tiny_link {
+    display: block;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+#footer_center {
+    margin: 0 24px;
+    flex: 1;
+}
+
+#footer_center p {
+    color: white;
+    font-size: 22px;
+}
+
+#cards_section {
+    text-align: center;
+    margin-top: 90px;
+}
+
+#cards_section h2, #cards_section p, #cards_section h6, #cards_section h4 {
+    color: white;
+}
+
+#cards_section h2 {
+    font-size: 48px;
+}
+#cards_section p {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#cards_container {
+    display: grid;
+    grid-template-columns: repeat(4, 295px);
+    grid-auto-rows: 450px;
+    gap: 24px;
+    width: 1252px;
+    margin: 60px auto;
+    text-align: left;
+}
