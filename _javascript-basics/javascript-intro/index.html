@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div id="onclick-example">
+    <div id="htmlContentjs">
         <h2>Javascript can change HTML content.</h2>
 
         <p id="changeHTML">Click the button below to change me</p>
@@ -26,8 +26,12 @@
         <button type="button" id="imgbtn">Click me to change the image</button>
     </div>
 
-    <!-- Links to external Javascript -->
-    <script src="js/main.js"></script>
+    <div id="changeCSSjs">
+        <h1>Javascript can be used to change css as well</h1>
+        <button type="button" id="red">Make background red</button>
+        <button type="button" id="blue">Make background blue</button>
+    </div>
+
 
     <!-- Javascript is written in the script element. -->
     <script>
@@ -39,5 +43,8 @@
 
         imgbtn.onclick = imgChange; // tells the button to execute the function imgChange.
     </script>
+
+    <!-- Links to external Javascript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
