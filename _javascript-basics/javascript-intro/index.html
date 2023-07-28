@@ -9,16 +9,21 @@
 <body>
     <div id="onclick-example">
         <h2>Javascript can change HTML content.</h2>
+
         <p id="changeHTML">Click the button below to change me</p>
+
         <!-- Javascript inline / attached to an element -->
         <button type="button"
         onclick='document.getElementById("changeHTML").innerHTML = "Hello World! I worked!"'>Click Me!</button>
+        <!-- creates an onclick event that tells the browser when the user clicks this button, go into the document and get the element with an ID of "changeHTML" and change it's inner html content. -->
     </div>
 
     <div id="attributeJS">
         <h2>Javascript can change HTML attributes.</h2>
+
         <img src="images/leaf.jpg" alt="this is an image of a leaf." width="400" height="auto" id="myImage">
-        <button type="button" onclick="imgChange">Click me to change the image</button>
+
+        <button type="button" id="imgbtn">Click me to change the image</button>
     </div>
 
     <!-- Links to external Javascript -->
@@ -28,7 +33,11 @@
     <script>
         function imgChange() {
             document.getElementById("myImage").src="images/flower.jpg"
-        }
+        } // creates a function that calls the image by the name of its id and changes its src attribute.
+
+        const imgbtn = document.querySelector("#imgbtn"); // gets the button element
+
+        imgbtn.onclick = imgChange; // tells the button to execute the function imgChange.
     </script>
 </body>
 </html>
