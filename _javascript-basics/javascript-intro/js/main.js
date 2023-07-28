@@ -1,4 +1,4 @@
-// changng CSS with JS
+// changing CSS with JS
 function colorChangea() {
     document.querySelector("#changeCSSjs").style.backgroundColor='red'
 }; // creates a function that changes the background color of the element that is called to a different value.
