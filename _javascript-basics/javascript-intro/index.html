@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript Intro</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <div id="onclick-example">
+        <h2>Javascript can change HTML content.</h2>
+        <p id="changeHTML">Click the button below to change me</p>
+        <!-- Javascript inline / attached to an element -->
+        <button type="button"
+        onclick='document.getElementById("changeHTML").innerHTML = "Hello World! I worked!"'>Click Me!</button>
+    </div>
+
+    <div id="attributeJS">
+        <h2>Javascript can change HTML attributes.</h2>
+        <img src="images/leaf.jpg" alt="this is an image of a leaf." width="400" height="auto" id="myImage">
+        <button type="button" onclick="imgChange">Click me to change the image</button>
+    </div>
+
+    <!-- Links to external Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Javascript is written in the script element. -->
+    <script>
+        function imgChange() {
+            document.getElementById("myImage").src="images/flower.jpg"
+        }
+    </script>
 </body>
 </html>
